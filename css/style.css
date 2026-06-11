@@ -1,0 +1,176 @@
+/* =======================
+ * RESET & BASE
+ * ======================= */
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: sans-serif;
+	background-color: #1a1a2e;
+	color: #e0e0e0;
+	padding: 30px 20px;
+
+}
+
+/* ========================
+ * App Container
+ * ======================== */
+
+#app {
+	max-width: 860px;
+	margin: 0 auto;
+}
+
+/* =======================
+ * Header
+ * ======================= */
+
+header {
+	text-align: center;
+	margin-bottom: 28px;
+}
+
+#structure-name {
+	font-size: 2rem;
+	color: #7eb8f7;
+	letter-spacing: 0.05em;
+}
+
+/* ======================
+ * Upload Section
+ * ====================== */
+
+#upload-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+	margin-bottom: 32px;
+}
+
+#upload-section label {
+	font-size: 1rem;
+	color: #a0b8d0;
+}
+
+#file-input {
+	cursor: pointer;
+	color: #e0e0e0;
+}
+
+/* ====================
+ * Hidden Utility
+ * ==================== */
+
+.hidden {
+	display: none;
+}
+
+/* ======================
+ * Layer Controls
+ * ====================== */
+
+#layer-controls {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 24px;
+	margin-bottom: 24px
+}
+
+#layer-controls button {
+	background-color: #16213e;
+	color: #e0e0e0;
+	border: 1px solid #4a6fa5;
+	padding: 8px 20px;
+	border-radius: 4px;
+	font-size: 1rem;
+	cursor: pointer;
+}
+
+#layer-controls button:hover {
+	background-color: #4a6fa5;
+	color: #ffffff;
+}
+
+#layer-counter {
+	font-size: 1rem;
+	min-width: 120px;
+	text-align: center;
+	color: #a0cfff;
+}
+
+/* ===================
+ * Color
+ * =================== */
+
+#grid-container {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 32px;
+}
+
+.block {
+	width: 48px;
+	height: 48px;
+	border:  1px solid rgba(0, 0, 0, 0.35);
+	border-radius: 3px;
+}
+
+/* ===================
+ * Legend
+ * =================== */
+
+#legend {
+	background-color: #16213e;
+	border: 1px solid #2a4a7f;
+	border-radius: 6px;
+	padding: 16px 20px;
+}
+
+#legend h3 {
+	font-size: 1rem;
+	color: #7eb8f7;
+	margin-bottom: 14px;
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
+}
+
+#legend-items {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 14px;
+}
+
+.legend-item {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.legend-swatch {
+	width: 22px;
+	height: 22px;
+	border: 1px solid rgba(0, 0, 0, 0.35);
+	border-radius: 3px;
+	flex-shrink: 0;
+}
+
+.legend-label {
+	font-size: 0.9rem;
+	color: #c0d8f0;
+	text-transform: capitalize;
+} 
+
+/* =============================
+ * Disabled Button
+ * ============================= */
+
+#layer-controls button:disabled {
+	opacity: 0.35;
+	cursor: not-allowed;
+}

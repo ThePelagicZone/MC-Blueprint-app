@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, intial-scale=1.0">
+		<title>Blueprint Viewer</title>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+
+	<body>
+		<div id="app">
+			
+			<header>
+				<h1 id="structure-name">Blueprint Viewer</h1>
+			</header>
+
+			<div id="upload-section">
+				<label for="file-input">Upload a Blueprint File</label>
+				<input type="file" id="file-input" accept=".json">
+			</div>
+
+			<div id="viewer" class="hidden">
+				<div id="layer-controls">
+					<button id="prev-btn">&#8679; Prev Layer</button>
+					<span id="layer-counter">Layer 1 of 1</span>
+					<button id="next-btn">Next Layer &#8681; </button>
+				</div>
+
+				<div id="grid-container"></div>
+
+				<div id="legend">
+					<h3>Legend</h3>
+					<div id="legend-items"></div>
+				</div>
+			</div>
+		</div>
+
+		<script src="js/app.js"></script>
+
+	</body>
+
+</html>

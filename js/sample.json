@@ -1,0 +1,44 @@
+{
+	"name": "Small Cabin",
+	"width": 5,
+	"depth": 5, 
+	"blocks": {
+		"air": "#c8e6ff",
+		"stone": "#888888",
+		"wood": "#8B5E3C",
+		"glass": "#aee4f7"
+	},
+	"layers": [
+		{
+			"y":0,
+			"grid": [
+				["stone", "stone", "stone", "stone", "stone"],
+				["stone", "stone", "stone", "stone", "stone"],	
+				["stone", "stone", "stone", "stone", "stone"],
+				["stone", "stone", "stone", "stone", "stone"],
+				["stone", "stone", "stone", "stone", "stone"]
+			]
+		},
+		{
+			"y": 1,
+			"grid": [
+				["wood", "wood", "wood", "wood", "wood"],
+				["wood", "air" , "air", "air", "wood"],
+				["wood", "air", "glass", "air", "wood"],
+				["wood", "air", "air", "air", "wood"],
+				["wood", "wood", "wood", "wood", "wood"]
+			]
+		},
+		{
+			"y": 2, 
+			"grid": [
+				["wood", "wood", "wood", "wood", "wood"],
+				["wood", "air", "air", "air", "wood"], 
+				["wood", "air", "air", "air", "wood"], 
+				["wood", "air", "air", "air", "wood"], 
+				["wood", "wood", "wood", "wood", "wood"]
+			]
+		}
+	]
+}
+									
