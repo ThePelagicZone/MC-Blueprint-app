@@ -28,7 +28,7 @@ const COLOUR_RULES = [
 	// ---------------------- Light Emitting --------------------
 	[['glowstone', 'shroomlight'], 			'#F5C842'], 
 	[['magma'], 					'#CC4400'],
-	[['fire'],					'#FF660'],
+	[['fire'],					'#FF6600'],
 	[['torch', 'lantern', 'candle'],		'#FFA020'],
 
 	// ---------------------- Ore & Metals ----------------------
@@ -38,11 +38,11 @@ const COLOUR_RULES = [
 	[['lapis'],					'#1144AA'],
 	[['coal'],					'#333333'],
 	[['iron'],					'#AAAAAA'],
-	[['copper'],					'B87333'],
+	[['copper'],					'#B87333'],
 	[['amethyst'],					'#9966CC'],
-	[['netherite'],					'4A3A3A'],
-	[['redstone'],					'CC2200'],
-	[['quartz'],					'EEE8BD0'],
+	[['netherite'],					'#4A3A3A'],
+	[['redstone'],					'#CC2200'],
+	[['quartz'],					'#EEE8BD'],
 
 	// ---------------------- Nether ----------------------------
 	[['obsidian'], 					'#1A0A2E'],
@@ -82,7 +82,7 @@ const COLOUR_RULES = [
 	[['flower', 'tulip', 'orchid', 'daisy',
 	  'rose'],					'#FF88AA'],
 	[['mushroom'],					'#CC8855'],
-	[['cora'],					'#FF6688'],
+	[['coral'],					'#FF6688'],
 	[['seagrass', 'kelp'],				'#2D8A4A'],
 	[['bamboo'],					'#7AB038'],
 	[['chorus'],					'#885599'],
@@ -184,9 +184,9 @@ function parseDimensions(snbt) {
 	const s = snbt.match(/startpos:{X:(\d+),Y:(\d+),Z:(\d+)}/);
 
 	return {
-		sizeX : parseInt(e[1]) = parseInt(s[1]) + 1,
-		sizeY : parseInt(e[2]) = parseInt(s[2]) + 1,
-		sizeZ : parseInt(e[3]) = parseInt(s[3]) + 1,
+		sizeX : parseInt(e[1]) - parseInt(s[1]) + 1,
+		sizeY : parseInt(e[2]) - parseInt(s[2]) + 1,
+		sizeZ : parseInt(e[3]) - parseInt(s[3]) + 1,
 	};
 }
 
